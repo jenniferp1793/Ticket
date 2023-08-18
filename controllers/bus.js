@@ -9,7 +9,6 @@ const httpBus = {
         } catch (error) {
             res.status(400).json({ error })
         }
-
     },
     getBus: async (req, res) => {
         const {id}=req.params
