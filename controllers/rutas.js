@@ -1,4 +1,4 @@
-import Ruta from "../models/rutas.js";
+import Ruta from "../models/ruta.js";
 
 const httpRuta ={
     getRuta: async (req, res) => {
