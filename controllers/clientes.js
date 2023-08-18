@@ -1,4 +1,4 @@
-import Cliente from "../models/clientes.js";
+import Cliente from "../models/cliente.js";
 
 const httpCliente = {
 
@@ -33,10 +33,18 @@ const httpCliente = {
         } catch (error) {
             res.status(400).json({ error })
         }
-
-
     },
     putCliente: async (req, res) => {
+        // try {
+        //     const {cedula}=req.params
+        //     const {nombre,telefono}=req.body
+        //     const cliente_editar = Cliente.find(cedula)
+        //     const cliente=await 
+        //     Cliente.findByIdAndUpdate(cliente_editar._id,{nombre,telefono},{new:true});
+        //     res.json({cliente})
+        // } catch (error) {
+        //     res.status(400).json({error})
+        // }
         try {
             const { id } = req.params
             const { nombre, telefono } = req.body
